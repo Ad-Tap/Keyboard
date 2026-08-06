@@ -1,0 +1,75 @@
+layout:
+  qmk_keyboard: corne_rotated
+  layout_name: LAYOUT_split_3x6_3
+layers:
+  Default:
+    - ["TG Game1", Q, W, F, P, B,   J, L, U, Y, \, null]
+    - ["Super",     A, R, S, T, G,   M, N, E, I, O, Caps]
+    - [null,        Z, X, C, D, V,   K, H, ",", ., /, null]
+    - {h: NUM, t: ";"}
+    - Space
+    - {h: Ctrl, t: Tab}
+    - {h: Shift, t: Enter}
+    - {h: SYM, t: Bspace}
+    - {h: Alt, t: "Esc"}
+
+  Number:
+    - [null, null, null, null, null, null,   "*", "7", "8", "9", "+", null]
+    - [null, null, null, null, null, null,   ".", "4", "5", "6", "-", null]
+    - [null, null, null, null, null, null,   "/", "1", "2", "3", "0", null]
+    - {type:  held}
+    - Space
+    - {h: Ctrl, t: Tab}
+    - {h: Shift, t: Enter}
+    - {h: SYM, t: Bspace}
+    - {h: Alt, t: "Esc"}
+
+  Symbols:
+    - [null, "^", "#", "+", "$", null,   null, "{", "}", ">", "~", null]
+    - [null, "!", "*", "&", "=", null,   null, "(", ")", "\"", "'", null]
+    - [null, "%", "|", "-", "@", null,   null, "[", "]", "<", "`", null]
+    - {h: NUM, t: ":"}
+    - Space
+    - {h: Ctrl, t: "_"}
+    - {h: Shift, t: Enter}
+    - {type: held}
+    - {h: Alt, t: "Esc"}
+
+  Navigation:
+    - [null, "F1", "F2", "F3", "F4", "Vol Up",     Home, "Page Down", "Page Up", End, "Sleep", Del]
+    - [null, "F5", "F6", "F7", "F8", "Mute",       Left, Down, Up, Right, "Caps Lock", null]
+    - [null, "F9", "F10", "F11", "F12", "Vol Down", "Prt Sc", Prev, "Pause Play", Next, "RGB Toggle", null]
+    - {h: NUM, t: ";"}
+    - {type:  held}
+    - {h: Ctrl, t: Tab}
+    - {h: Shift, t: Enter}
+    - {type:  held}
+    - {h: Alt, t: "Esc"}
+    
+  Game1:
+    - [Esc, T, Q, W, E, R,   null, null, null, null, null, null]
+    - [Tab, LShift, A, S, D, F,   null, null, null, null, null, null]
+    - [I, LCtrl, Z, X, C, V,   null, null, null, null, null, null]
+    - null
+    - Space
+    - Game2
+    - "TG Default"
+    - null
+    - null
+
+  Game2:
+    - [null, null, "1", "2", "3", null,   null, null, null, null, null, null]
+    - [null, null, "4", "5", "6", null,   null, null, null, null, null, null]
+    - [null, null, "7", "8", "9", null,   null, null, null, null, null, null]
+    - null
+    - null
+    - {type: held}
+    - null
+    - null
+    - null
+    
+combos:
+  - {p: [5, 17], k: "Bright+", l: ["Navigation"]}
+  - {p: [17, 29], k: "Bright-", l: ["Navigation"]}
+  - {p: [37, 40], k: "Navigation", l: ["Default"]}
+  - {p: [40, 41], k: "Del", l: ["Default"]}
