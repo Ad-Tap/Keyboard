@@ -20,6 +20,7 @@ Colemak-DH keymap for a 3x6 split keyboard (Corne).
 ### Core Design Goals
 * **Cross-Hand Chording:** Main functional layer hold triggers (like `NUM` on the left thumb) drive target pads on the opposite hand (right-hand numpad), keeping hand tension balanced and minimizing same-hand pinching.
 * **Symbol Layer Efficiency:** Grouped symbols commonly used to enclose things, such as parentheses, on the right and everything else on the left. Following the philosophy of Colemak, key rolls are made easier for things like !=, +=, and -=. Two hand chording is also easily used for things like ->, >=, and <=.
+* **Thumb Cluster:**  avoided putting any dual tap hold functionality on the space because of how often its used in quickly before letters. This is to avoid accidentally using a modifier when you meant to type space then a letter/word.
 
 ### Dedicated Gaming Layers
 * **Game 1 (Base FPS / Action):** Dedicated left-half layout isolating standard movement (`WASD`), actions (`Q, E, R, T, F`), and modifiers (`Shift`, `Ctrl`, `Tab`).
